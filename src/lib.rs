@@ -11,7 +11,7 @@ macro_rules! parse2_macro_input {
         }
     };
     ($tokenstream:ident with $parser:path) => {
-        match $crate::__private::Parser::parse($parser, $tokenstream) {
+        match $crate::__private::Parser::parse2($parser, $tokenstream) {
             $crate::__private::Ok(data) => data,
             $crate::__private::Err(err) => {
                 return $crate::__private::TokenStream::from(err.to_compile_error());
