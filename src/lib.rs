@@ -19,6 +19,6 @@ macro_rules! parse2_macro_input {
         }
     };
     ($tokenstream:ident) => {
-        $crate::parse_macro_input!($tokenstream as _)
+        $crate::parse2_macro_input!($tokenstream as _)
     };
 }
