@@ -1,0 +1,8 @@
+[package]
+name = "parse2_macro_input"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+proc-macro2 = { version = "1", features = [] }
+syn = { version = "2", features = [] }
